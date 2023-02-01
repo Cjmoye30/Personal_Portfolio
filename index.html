@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cambric Moye Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
 
-        <!-- 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cambric Moye Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 
             HTML To-Do List:
             1. Header Section with a headshot, name, and a contact link which deploys to a new page or email with details on how to contact me
             2. Header links can be SVG images for git, linkedin, and a icon to contact me.
@@ -23,32 +25,70 @@
          -->
 
 
-         <header>
-            <h1>CM Portfolio</h1>
-            <div class="nav">
-                    <ul class="nav-group">
-                        <li class="nav-links">1</li>
-                        <li class="nav-links">2</li>
-                        <li class="nav-links">3</li>
-                    </ul>
+    <header>
+        <h1>CM Portfolio</h1>
+        <div class="nav">
+            <ul class="nav-group">
+                <li class="nav-links">
+                    <a href="#hero-about-me">About Me</a>
+                </li>
+
+                <li class="nav-links">
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li class="nav-links">Contact Me</li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="hero-about-me" class="hero-section">
+        <div class="hero">
+            <div class="about-me">
+                <h1 class="hero-title">About Me...</h1>
+                <p class="hero-content">Future Web Developer</p>
+                <p class="hero-content">Supply Chain Professional</p>
+                <p class="hero-content">Retired Professional Athlete</p>
+                <p class="hero-content">Aspiring Chef</p>
+                <p class="hero-content"></p>
             </div>
-         </header>
+            <div class="hero-img-container">
+                <img class="hero-img" src="assets/Golden.JPG" alt="">
+            </div>
+        </div>
 
-         <main>
-            <section class="section section1"></section>
-            <section class="section section2"></section>
-            <section class="section section3"></section>
-            <section class="section section4"></section>
-         </main>
+    </div>
 
-         <section></section>
+    <main>
+        <section id="my-work" class="section section1">
+            <h1>My Work</h1>
+            <div class="project-wrapper">
+                <div class="project-card main-project card">Main Project</div>
+                <div class="project-card">Project 1</div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
+                <div class="project-card">Project 4</div>
+                <div class="project-card">Project 5</div>
+                <div class="project-card">Project 6</div>
+            </div>
+        </section>
 
-         <footer>
-            <h2>footer sectioin</h2>
-         </footer>
+        <section id="contact-me" class="section section2">
+            <h1>Contact Me</h1>
+        </section>
+    </main>
+
+    <section>
+
+
+    </section>
+
+    <footer>
+        <h2>footer sectioin</h2>
+    </footer>
 
 
 
-        <script src="" async defer></script>
-    </body>
+    <script src="" async defer></script>
+</body>
+
 </html>
