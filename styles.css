@@ -111,7 +111,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 90%;
 }
 
 .project-card {
@@ -119,9 +119,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px 5px;
     height: 300px;
-    width: 400px;
+    width: 600px;
     position: relative;
 }
 
@@ -141,7 +141,6 @@ main {
     opacity: .7;
 }
 
-
 .project-links-wrapper {
     width: 100%;
     display: flex;
@@ -154,18 +153,30 @@ main {
 .main-project {
     height: 500px;
     width: 100%;
-    background-color: whitesmoke;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.project-img-holder {
+.main-project .project-img-holder {
     height: 100%;
     width: 100%;
-    background-image: url(assets/Italian\ Style\ Flatbread.jpg);
+    /* background-image: url(assets/Italian\ Style\ Flatbread.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+}
+
+.project-img-holder {
+    object-fit: fit;
+    overflow: hidden;
+    background-color: black;
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .6;
 }
 
 footer {
