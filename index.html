@@ -44,26 +44,68 @@
     <div id="hero-about-me" class="hero-section">
         <div class="hero">
             <div class="about-me">
-                <h1 class="hero-title">About Me...</h1>
-                <p class="hero-content">Future Web Developer</p>
-                <p class="hero-content">Supply Chain Professional</p>
-                <p class="hero-content">Retired Professional Athlete</p>
-                <p class="hero-content">Aspiring Chef</p>
-                <p class="hero-content"></p>
+                <div class="hero-left">
+
+                    <!-- Left side of the Hero will contain my main bio which will start with some concise bulletpoints which then extend down to a more extended bio. I could use some JS or CSS pseudo classes in order to hide/show the extended bio -->
+                    <h1 class="hero-title">About Me...</h1>
+                    <p class="hero-content">Future Web Developer</p>
+                    <p class="hero-content">Supply Chain Professional</p>
+                    <p class="hero-content">Retired Professional Athlete</p>
+                    <p class="hero-content">Aspiring Chef</p>
+                </div>
+
+                <!-- Div located under your simple bulletpoints which includes a witty kind of description based on the above bulletpoints in a fancy font that works -->
+                <div class="bio-wrapper">
+                    <p class="bio-text">My name is Cambric Moye - Cam for short </p>
+                    <p class="bio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias quasi
+                        cumque fuga! Provident labore, sit unde impedit deserunt fugit amet maiores. Omnis cumque at
+                        beatae blanditiis, eius autem perferendis!</p>
+                </div>
+
+
             </div>
+
+            <!-- Right side of Hero Container which will contain the headshot image -->
             <div class="hero-img-container">
-                <img class="hero-img" src="assets/Golden.JPG" alt="">
+                <img class="hero-img" src="assets/Golden.JPG" alt="Cambric Moye Golden Headshot">
             </div>
         </div>
 
     </div>
 
+    <!-- Main section which will contain all projects and contact info in different sections within -->
     <main>
+
+        <!-- Current work section - screenshots of each project I'm working on -->
+        <!-- Keep the width of the main section at 100% so that the header takes up the entire screen, and then the content below is nested underneath -->
         <section id="my-work" class="section section1">
-            <h1>My Work</h1>
+            <h2 class="section-header">My Work</h2>
             <div class="project-wrapper">
-                <div class="project-card main-project card">Main Project</div>
-                <div class="project-card">Project 1</div>
+
+                <!-- Each of the project cards should have a link to the live site as well as to the Github repo - have those links show up as you hover over the image. Start off with a title of the project that is always visible which is attached at the flex-start of the card -->
+                <div class="project-card main-project">
+                    <h3 class="project-title">Main Project</h3>
+
+                    <div class="project-links-wrapper">
+                        <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
+                        <h3 class="project-links><a href=" #" target="_blank">Github Live Site</a></h3>
+                    </div>
+
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <h3 class="project-title">Project 1</h3>
+
+                    <div class="project-links-wrapper">
+                        <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
+                        <h3 class="project-links><a href=" #" target="_blank">Github Live Site</a></h3>
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
                 <div class="project-card">Project 2</div>
                 <div class="project-card">Project 3</div>
                 <div class="project-card">Project 4</div>
@@ -73,7 +115,10 @@
         </section>
 
         <section id="contact-me" class="section section2">
-            <h1>Contact Me</h1>
+            <h2 class="section-header">Contact Me</h2>
+            <div class="contact-wrapper">
+                <p>contact info here</p>
+            </div>
         </section>
     </main>
 
