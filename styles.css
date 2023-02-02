@@ -130,7 +130,7 @@ main {
     top: 0;
     left: 0;
     background-color: whitesmoke;
-    opacity: .7;
+    opacity: .9;
 }
 
 .project-description {
@@ -138,7 +138,7 @@ main {
     bottom: 0;
     left: 0;
     background-color: whitesmoke;
-    opacity: .7;
+    opacity: .9;
 }
 
 .project-links-wrapper {
@@ -147,7 +147,12 @@ main {
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    background-color: yellow
+    background-color: yellow;
+}
+
+.project-links {
+    /* Hiding the links for Github until the user hovers over them - makes it look cleaner */
+    display: none;
 }
 
 .main-project {
@@ -161,13 +166,9 @@ main {
 .main-project .project-img-holder {
     height: 100%;
     width: 100%;
-    /* background-image: url(assets/Italian\ Style\ Flatbread.jpg);
-    background-position: center;
-    background-size: cover; */
 }
 
 .project-img-holder {
-    object-fit: fit;
     overflow: hidden;
     background-color: black;
 }
@@ -176,15 +177,17 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: .6;
+    opacity: .5;
 }
 
 footer {
     height: 200px;
 }
 
+/* ----- Pseudo Elements ----- */
 
-/* Media Queries */
+
+/* ----- Media Queries ----- */
 
 /* 992px*/
 @media screen and (max-width: 992px) {
