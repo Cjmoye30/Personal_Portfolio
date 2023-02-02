@@ -102,7 +102,6 @@ main {
     scroll-snap-align: start;
     height: auto;
     width: 100%;
-    background-color: aqua;
 
 }
 
@@ -128,20 +127,45 @@ main {
 
 .project-title {
     position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    opacity: .7;
+}
+
+.project-description {
+    position: absolute;
     bottom: 0;
     left: 0;
+    background-color: whitesmoke;
+    opacity: .7;
 }
+
 
 .project-links-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
+    position: absolute;
+    background-color: yellow
 }
 
 .main-project {
     height: 500px;
     width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img-holder {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/Italian\ Style\ Flatbread.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 footer {
