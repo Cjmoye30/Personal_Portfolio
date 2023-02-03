@@ -228,19 +228,26 @@ main {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: auto;
 }
 
 .contact-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 200px;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .contact-img {
     height: 400px;
+}
+
+.contact-icon-img {
+    height: 150px;
+    width: 150px;
+
 }
 
 footer {
@@ -288,9 +295,7 @@ footer {
     } 
 }
 
-
 /*  768px */
-
 @media screen and (max-width: 768px) {
     
     
