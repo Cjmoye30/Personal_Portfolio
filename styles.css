@@ -9,13 +9,58 @@ body {
     background-color: beige;
 }
 
+h1, h2, h3 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 header {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 200px;
-    border-bottom: solid 10px;
+    /* border-bottom: solid 10px; */
+    margin-bottom: 5px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: center;
+}
+
+.header-left {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: yellow;
+}
+.logo {
+    height: auto;
+}
+
+.logo-subtitle {
+    font-size: 8rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.nav-group {
+    display: flex;
+}
+
+.nav-links {
+    text-decoration: none;
+    list-style: none;
 }
 
 main {
@@ -23,14 +68,6 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-.header-left {
-    display: flex;
-}
-
-.logo {
-    height: 200px;
 }
 
 .hero {
@@ -76,7 +113,6 @@ main {
     padding: 30px 0;
 }
 
-
 .hero-img-container {
     width: 40%;
     display: flex;
@@ -96,21 +132,10 @@ main {
     background-color: whitesmoke;
 }
 
-.nav-group {
-    display: flex;
-}
-
-
-.nav-links {
-    text-decoration: none;
-    list-style: none;
-}
-
 .section {
     scroll-snap-align: start;
     height: auto;
     width: 100%;
-
 }
 
 .project-wrapper {
@@ -120,6 +145,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 90%;
+    max-width: 1750px;
 }
 
 .project-card {
@@ -128,9 +154,10 @@ main {
     justify-content: center;
     align-items: center;
     margin: 20px 5px;
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 800px;
     position: relative;
+    overflow: hidden;
 }
 
 .project-title {
@@ -150,7 +177,6 @@ main {
 }
 
 .project-links-wrapper {
-    /* width: 20%; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,7 +209,6 @@ main {
 }
 
 .project-img-holder {
-    overflow: hidden;
     background-color: black;
 }
 
@@ -193,7 +218,6 @@ main {
     object-fit: cover;
     opacity: .6;
     filter: blur(0);
-
 }
 
 footer {
@@ -229,8 +253,7 @@ footer {
 
     .hero-img {
         width: 60%;
-    }
-    
+    } 
 }
 
 
