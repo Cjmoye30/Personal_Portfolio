@@ -1,24 +1,50 @@
+/* ---------- Color Pallets ---------- */
+:root{
+
+    /* Paste out all color pallet links to access them easily. */
+
+    /* https://colorhunt.co/palette/362706464e2eacb992e9e5d6 */
+    --dark1:#362706;
+    --dark2: #ACB992;
+    --light1: #E9E5D6;
+    --light2: #464E2E;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid .1px;
+    /* border: solid .1px; */
 }
 
 body {
-    background-color: beige;
+    background-color: var(--light1)
 }
 
 h1, h2, h3 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
+p, li, a {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ---------- Header, Logo, and Navigation Bar ---------- */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    border-bottom: solid 10px;
+    border-bottom: solid 1px var(--dark1);
+    padding-top: 10px;
+    background-color: var(--dark1);
+    color: var(--light1);
 }
 
 .header-content {
@@ -29,6 +55,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-bottom: 15px;
 }
 
 .icon-img {
@@ -39,13 +66,12 @@ header {
     right: 10px;
 }
 
-.logo {
-    height: auto;
-    width: auto;
-}
+/* .logo {
+ nothing needed at the moment
+} */
 
 .logo-subtitle {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .nav {
@@ -53,23 +79,30 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: aquamarine;
+    background-color: var(--dark2)
 }
 
 .nav-group {
+    width: 50%;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.nav-links {
+.nav-group li {
+    font-size: 36px;
     text-decoration: none;
     list-style: none;
+    padding: 10px 50px;
+    color: var(--dark1);
 }
 
+/* ---------- Main Section - Wraps all Projects down to Footer ---------- */
 main {
     width: 100%;
-    margin: 10px auto;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
+    background-color: var(--dark2);
 }
 
 .hero {
@@ -86,8 +119,11 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: olivedrab;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    padding: 50px 30px;
+
+    background-color: var(--light1);
+    color: var(--dark1);
 }
 
 .about-me {
@@ -165,8 +201,11 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: whitesmoke;
+    background-color: whitesmoke; 
     opacity: .9;
+    padding: 0px 10px;
+    width: 100%;
+    font-size: 24px;
 }
 
 .project-description {
@@ -175,6 +214,10 @@ main {
     left: 0;
     background-color: whitesmoke;
     opacity: .9;
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
 .project-links-wrapper {
@@ -224,19 +267,26 @@ main {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: auto;
 }
 
 .contact-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 200px;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .contact-img {
     height: 400px;
+}
+
+.contact-icon-img {
+    height: 150px;
+    width: 150px;
+
 }
 
 footer {
@@ -245,6 +295,9 @@ footer {
 
 /* ----- Pseudo Elements ----- */
 
+.nav-links:visited {
+    color: var(--dark1);
+}
 
 /* Blur background images and show links on hover */
 .project-img-holder:hover {
@@ -284,9 +337,7 @@ footer {
     } 
 }
 
-
 /*  768px */
-
 @media screen and (max-width: 768px) {
     
     

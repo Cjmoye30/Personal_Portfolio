@@ -34,21 +34,25 @@
     <header>
         <!-- Div for logo and name of the page - Centered on the screen -->
         <div class="header-content">
-            <img class="logo" src="assets/LogoHeader.svg" alt="placeholder-logo">
+            <img class="logo" src="assets/images/signature-logo-light.svg" alt="placeholder-logo">
             <h1 class="logo-subtitle">Portfolio</h1>
-            <img class="icon-img" src="assets/github-mark.svg" alt="github logo">
+            <a href="https://github.com/Cjmoye30">
+                <img class="icon-img" src="assets/icons/github-icon-light.svg" alt="github logo">
+            </a>
         </div>
 
         <div class="nav">
             <ul class="nav-group">
-                <li class="nav-links">
-                    <a href="#hero-about-me">About Me</a>
+                <li>
+                    <a class="nav-links" href="#hero-about-me">About Me</a>
+                </li>
+                <li >
+                    <a class="nav-links" href="#my-work">My Work</a>
                 </li>
 
-                <li class="nav-links">
-                    <a href="#contact-me">Contact Me</a>
+                <li>
+                    <a class="nav-links" href="#contact-me">Contact</a>
                 </li>
-                <li class="nav-links">Contact Me</li>
             </ul>
         </div>
 
@@ -58,12 +62,11 @@
     <!-- Main section which will contain all projects and contact info in different sections within -->
     <main>
 
+        <!-- Introductory Section with breif bio of who I am -->
         <div id="hero-about-me" class="hero-section">
             <div class="hero">
                 <div class="about-me">
                     <div class="hero-left">
-
-                        <!-- Left side of the Hero will contain my main bio which will start with some concise bulletpoints which then extend down to a more extended bio. I could use some JS or CSS pseudo classes in order to hide/show the extended bio -->
                         <h1 class="hero-title">Hi, I'm Cambric.</h1>
                         <p class="hero-content">Future Full-Stack Developer</p>
                         <p class="hero-content">Supply Chain Professional</p>
@@ -71,7 +74,7 @@
                         <p class="hero-content">Aspiring Chef</p>
                     </div>
 
-                    <!-- Div located under your simple bulletpoints which includes a witty kind of description based on the above bulletpoints in a fancy font that works -->
+                    <!-- Text about who I am and my intentions -->
                     <div class="bio-wrapper">
                         <p class="bio-text">My name is Cambric Moye and I am training to become a Full-Stack Developer
                             through <a href="https://bootcamp.charlotte.edu/coding/" target="_blank">The Coding Bootcamp
@@ -81,36 +84,29 @@
                             cohort and developer community, and ultimately <span>to create code that people will
                                 love</span>.</p>
                     </div>
-
-
                 </div>
 
-                <!-- Right side of Hero Container which will contain the headshot image -->
+                <!-- Container for Headshot image -->
                 <div class="hero-img-container">
-
-                    <!-- Keep the image at a minimum height, and then reduce down once we get to a certain screen size and then drop it down in the normal flex flow. -->
-                    <img class="hero-img" src="assets/IMG-4625.PNG" alt="">
+                    <img class="hero-img" src="assets/images/Main Headshot.PNG" alt="Cambric Moye Headshot">
                 </div>
             </div>
-
         </div>
 
-
-        <!-- Current work section - screenshots of each project I'm working on -->
-        <!-- Keep the width of the main section at 100% so that the header takes up the entire screen, and then the content below is nested underneath -->
         <section id="my-work" class="section section1">
             <h2 class="section-header">My Work</h2>
+
+            <!-- Wrapper for entire Project Sectioin to allow project cards to wrap -->
             <div class="project-wrapper">
 
-                <!-- Each of the project cards should have a link to the live site as well as to the Github repo - have those links show up as you hover over the image. Start off with a title of the project that is always visible which is attached at the flex-start of the card -->
                 <!-- Main Project -->
                 <div class="project-card main-project">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Italian Style Flatbread.jpg"
+                        <img class="project-img" src="assets/images/Italian Style Flatbread.jpg"
                             alt="Flatbread with pesto, cheese, and tomatoes">
                     </div>
 
-                    <h3 class="project-title">Upcoming Food Blog - WIP</h3>
+                    <h3 class="project-title">In Progress: Favorite Recepie Collection</h3>
 
                     <div class="project-links-wrapper">
                         <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
@@ -118,9 +114,7 @@
                     </div>
 
                     <div class="project-description">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum neque repudiandae dolorem
-                            adipisci porro omnis fugit recusandae excepturi eveniet, facere molestiae iure asperiores
-                            quaerat eos. Tenetur deleniti nesciunt quo explicabo.</p>
+                        <p>Cooking is one of my main hobbies and passions. I've created this site to keep track of all the things I make with a descrptive list of ingredients and instructions.</p>
                     </div>
 
                 </div>
@@ -128,7 +122,7 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/SimonGame - Udemy Project.jpg"
+                        <img class="project-img" src="assets/images/SimonGame - Udemy Project.jpg"
                             alt="Flatbread with pesto, cheese, and tomatoes">
                     </div>
 
@@ -149,7 +143,7 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Prework Study Guide.jpg" alt="">
+                        <img class="project-img" src="assets/images/Prework Study Guide.jpg" alt="">
                     </div>
 
                     <h3 class="project-title">Coding Bootcamp Study Guide</h3>
@@ -171,7 +165,7 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Frontend Mentor.jpg" alt="">
+                        <img class="project-img" src="assets/images/Frontend Mentor.jpg" alt="">
                     </div>
 
                     <h3 class="project-title">Frontend Mentor Projects</h3>
@@ -192,16 +186,16 @@
                 <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Under Construction.jpg"
+                        <img class="project-img" src="assets/images/Under Construction.jpg"
                             alt="Flatbread with pesto, cheese, and tomatoes">
                     </div>
 
                     <h3 class="project-title">Project 4 - TBD</h3>
 
-                    <div class="project-links-wrapper">
+                    <!-- <div class="project-links-wrapper">
                         <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site</a></h3>
-                    </div>
+                    </div> -->
 
                     <div class="project-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorem quasi eveniet ea
@@ -213,16 +207,16 @@
                 <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Under Construction.jpg"
+                        <img class="project-img" src="assets/images/Under Construction.jpg"
                             alt="Flatbread with pesto, cheese, and tomatoes">
                     </div>
 
                     <h3 class="project-title">Project 5 - TBD</h3>
 
-                    <div class="project-links-wrapper">
+                    <!-- <div class="project-links-wrapper">
                         <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site</a></h3>
-                    </div>
+                    </div> -->
 
                     <div class="project-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorem quasi eveniet ea
@@ -234,16 +228,16 @@
                 <!-- Project 6 -->
                 <div class="project-card">
                     <div class="project-img-holder">
-                        <img class="project-img" src="assets/Under Construction.jpg"
+                        <img class="project-img" src="assets/images/Under Construction.jpg"
                             alt="Flatbread with pesto, cheese, and tomatoes">
                     </div>
 
                     <h3 class="project-title">Project 6 - TBD</h3>
 
-                    <div class="project-links-wrapper">
+                    <!-- <div class="project-links-wrapper">
                         <h3 class="project-links"><a href="#" target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site</a></h3>
-                    </div>
+                    </div> -->
 
                     <div class="project-description">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorem quasi eveniet ea
@@ -256,20 +250,27 @@
             </div>
         </section>
 
+        <!-- Contact Me Section - Call to action for next steps with links to all socials -->
         <section id="contact-me" class="section section2">
             <h2 class="section-header">Contact Me</h2>
             <div class="contact-wrapper">
+
+                <!-- Title and Headshot SVG -->
                 <h3>Like what you see? Let's Connect!</h3>
-                <img class="contact-img" src="assets/SVGHeadshot.svg" alt="">
+                <img class="contact-img" src="assets/images/SVGHeadshot.svg" alt="Black and White Headshot">
 
+                <!-- Links for all Social Media and ways to connect - more will be added with time -->
                 <div class="contact-links">
-                    <a target="_blank" href="">Github</a>
-                    <a target="_blank" href="">Linkedin</a>
-                    <a target="_blank" href="">Gmail</a>
-                    <a target="_blank" href=""></a>
-                </div>
-  
 
+                    <a target="_blank" href="https://github.com/Cjmoye30">
+                        <img class="contact-icon-img" src="assets/icons/github-icon.svg" alt="github logo"></a>
+
+                    <a target="_blank" href="https://www.linkedin.com/in/cambric-moye-30/">
+                        <img class="contact-icon-img" src="assets/icons/linkedin-icon.svg" alt="github logo"></a>
+
+                    <a target="_blank" href="mailto:Cjmoye30@gmail.com">
+                        <img class="contact-icon-img" src="assets/icons/gmail-icon.svg" alt="github logo"></a>
+                </div>
             </div>
         </section>
     </main>
