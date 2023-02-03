@@ -57,12 +57,16 @@ header {
 }
 
 .nav-group {
+    width: 50%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-links {
+    font-size: 24px;
     text-decoration: none;
     list-style: none;
+    padding: 10px 50px;
 }
 
 main {
@@ -224,7 +228,7 @@ main {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
 }
 
 .contact-links {
