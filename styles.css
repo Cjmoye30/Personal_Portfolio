@@ -9,28 +9,67 @@ body {
     background-color: beige;
 }
 
+h1, h2, h3 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 100%;
     border-bottom: solid 10px;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon-img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.logo-subtitle {
+    font-size: 5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.nav-group {
+    display: flex;
+}
+
+.nav-links {
+    text-decoration: none;
+    list-style: none;
 }
 
 main {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-}
-
-.header-left {
-    display: flex;
-}
-
-.logo {
-    height: 200px;
 }
 
 .hero {
@@ -76,7 +115,6 @@ main {
     padding: 30px 0;
 }
 
-
 .hero-img-container {
     width: 40%;
     display: flex;
@@ -96,21 +134,9 @@ main {
     background-color: whitesmoke;
 }
 
-.nav-group {
-    display: flex;
-}
-
-
-.nav-links {
-    text-decoration: none;
-    list-style: none;
-}
-
 .section {
-    scroll-snap-align: start;
     height: auto;
     width: 100%;
-
 }
 
 .project-wrapper {
@@ -120,6 +146,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 90%;
+    max-width: 1750px;
 }
 
 .project-card {
@@ -128,9 +155,10 @@ main {
     justify-content: center;
     align-items: center;
     margin: 20px 5px;
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 800px;
     position: relative;
+    overflow: hidden;
 }
 
 .project-title {
@@ -150,17 +178,22 @@ main {
 }
 
 .project-links-wrapper {
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     position: absolute;
-    background-color: yellow;
 }
 
 .project-links {
-    /* Hiding the links for Github until the user hovers over them - makes it look cleaner */
     display: none;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.project-links-wrapper a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .main-project {
@@ -177,7 +210,6 @@ main {
 }
 
 .project-img-holder {
-    overflow: hidden;
     background-color: black;
 }
 
@@ -187,7 +219,24 @@ main {
     object-fit: cover;
     opacity: .6;
     filter: blur(0);
+}
 
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.contact-img {
+    height: 400px;
 }
 
 footer {
@@ -196,14 +245,29 @@ footer {
 
 /* ----- Pseudo Elements ----- */
 
+
 /* Blur background images and show links on hover */
-.project-img:hover {
-    filter: blur(6px);
+.project-img-holder:hover {
+    filter: blur(4px);
     transition: all 0.25s ease-out;
 }
 
+.project-card:hover .project-links {
+    display: block;
+}
+
+
 
 /* ----- Media Queries ----- */
+
+/* 1750px */
+@media screen and (max-width: 1250px) {
+    .project-card {
+        width: 100%;
+    }
+    
+    
+}
 
 /* 992px*/
 @media screen and (max-width: 992px) {
@@ -217,8 +281,7 @@ footer {
 
     .hero-img {
         width: 60%;
-    }
-    
+    } 
 }
 
 
