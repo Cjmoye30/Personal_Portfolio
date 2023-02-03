@@ -25,6 +25,14 @@ main {
     flex-direction: column;
 }
 
+.header-left {
+    display: flex;
+}
+
+.logo {
+    height: 200px;
+}
+
 .hero {
     width: 100%;
     display: flex;
@@ -177,7 +185,9 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: .5;
+    opacity: .6;
+    filter: blur(0);
+
 }
 
 footer {
@@ -185,6 +195,12 @@ footer {
 }
 
 /* ----- Pseudo Elements ----- */
+
+/* Blur background images and show links on hover */
+.project-img:hover {
+    filter: blur(6px);
+    transition: all 0.25s ease-out;
+}
 
 
 /* ----- Media Queries ----- */
