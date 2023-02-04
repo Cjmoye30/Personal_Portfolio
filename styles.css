@@ -19,7 +19,11 @@
 }
 
 body {
-    background-color: var(--light1)
+    /* Limiting width because anything over 2500 seems insance and elements on the page are too far apart */
+    background-color: var(--light1);
+    max-width: 2500px;
+    margin: 0 auto;
+    border: solid 2px;
 }
 
 h1, h2, h3 {
@@ -66,10 +70,6 @@ header {
     right: 10px;
 }
 
-/* .logo {
- nothing needed at the moment
-} */
-
 .logo-subtitle {
     font-size: 6rem;
 }
@@ -89,6 +89,8 @@ header {
 }
 
 .nav-group li {
+    display: flex;
+    align-items: center;
     font-size: 36px;
     text-decoration: none;
     list-style: none;
@@ -105,25 +107,37 @@ main {
     background-color: var(--dark2);
 }
 
-.hero {
+/* ---------- About Me / Bio Section ---------- */
+
+.bio {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.hero-section {
+#about-me {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 50px; */
+    border-bottom: 10px solid var(--dark1);
     padding: 50px 30px;
 
     background-color: var(--light1);
     color: var(--dark1);
+}
+
+.bio-left {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-me {
@@ -134,41 +148,74 @@ main {
     width: 60%;
 }
 
-.hero-title {
-    font-size: 6rem;
+.bio-title {
+    font-size: 5rem;
     padding: 20px 30px;
+    text-align: center;
 }
 
-.hero-content {
-    padding: 20px 100px;
+.bio-content-wrapper {
+    height: 100px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.bio-mini-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 25%;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.bio-mini-card-inner {
+    border-right: solid .1px;
+}
+
+.bio-mini-card p {
+    font-size: 24px;
+}
+
+.bio-icon {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    opacity: .1;
 }
 
 .bio-wrapper {
+    border: solid;
     padding: 20px 30px;
 }
 
 .bio-text {
-    padding: 30px 0;
+    line-height: 3rem;
+    font-size: 24px;
 }
 
-.hero-img-container {
+.bio-img-container {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-img {
+.bio-img {
     width: 100%;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: scale-down;
     overflow: hidden;
     opacity: .7;
     border: solid;
     border-radius: 20px;
-    margin: 20px;
-    background-color: whitesmoke;
+    margin: 10px;
+    background-color: var(--dark1)
 }
+
+/* ---------- My Work Section---------- */
 
 .section {
     height: auto;
