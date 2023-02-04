@@ -70,10 +70,6 @@ header {
     right: 10px;
 }
 
-/* .logo {
- nothing needed at the moment
-} */
-
 .logo-subtitle {
     font-size: 6rem;
 }
@@ -93,6 +89,8 @@ header {
 }
 
 .nav-group li {
+    display: flex;
+    align-items: center;
     font-size: 36px;
     text-decoration: none;
     list-style: none;
@@ -109,7 +107,7 @@ main {
     background-color: var(--dark2);
 }
 
-/* ---------- Main Section - Wraps all Projects down to Footer ---------- */
+/* ---------- About Me / Bio Section ---------- */
 
 .bio {
     width: 100%;
@@ -136,6 +134,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    width: 100%;
+    padding: 20px 0;
     flex-direction: column;
     justify-content: center;
 }
@@ -148,18 +148,42 @@ main {
     width: 60%;
 }
 
-
 .bio-title {
-    width: 50%;
     font-size: 5rem;
     padding: 20px 30px;
+    text-align: center;
 }
 
-.bio-content {
+.bio-content-wrapper {
+    height: 100px;
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    width: 40%;
+}
+
+.bio-mini-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 25%;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+.bio-mini-card-inner {
+    border-right: solid .1px;
+}
+
+.bio-mini-card p {
+    font-size: 24px;
+}
+
+.bio-icon {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    opacity: .1;
 }
 
 .bio-wrapper {
@@ -172,14 +196,14 @@ main {
     font-size: 24px;
 }
 
-.hero-img-container {
+.bio-img-container {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-img {
+.bio-img {
     width: 100%;
     max-height: 600px;
     object-fit: scale-down;
@@ -190,6 +214,8 @@ main {
     margin: 10px;
     background-color: var(--dark1)
 }
+
+/* ---------- My Work Section---------- */
 
 .section {
     height: auto;
