@@ -134,8 +134,9 @@ main {
 
 .bio-left {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -158,6 +159,7 @@ main {
     padding: 10px 30px;
     display: flex;
     align-items: center;
+    width: 40%;
 }
 
 .bio-wrapper {
