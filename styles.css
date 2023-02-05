@@ -10,12 +10,20 @@
     --light2: #464E2E;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: solid .1px; */
+}
+
+html {
+    /* Bakcground Creator: 
+    <a href="https://www.freepik.com/free-photo/beige-paintbrush-stroke-textured-background_17839870.htm#query=texture%20background&position=12&from_view=keyword">Image by rawpixel.com</a> on Freepik
+     */
+    background-image: url(assets/images/beige-paintbrush-stroke-textured-background.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 body {
@@ -104,7 +112,7 @@ main {
     margin:0 auto;
     display: flex;
     flex-direction: column;
-    background-color: var(--dark2);
+    /* background-color: var(--dark2); */
 }
 
 /* ---------- About Me / Bio Section ---------- */
@@ -215,11 +223,19 @@ main {
     background-color: var(--dark1)
 }
 
-/* ---------- My Work Section---------- */
+/* ---------- My Work /Projects Section---------- */
 
 .section {
     height: auto;
     width: 100%;
+}
+
+.section-header {
+    font-size: 5rem;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--light2);
+    color: var(--light1);
 }
 
 .project-wrapper {
@@ -233,12 +249,13 @@ main {
 }
 
 .project-card {
-    border: solid .1px;
+    border: solid 4px var(--dark1);
+    box-shadow: 3px 3px 8px var(--light2);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 5px;
-    height: 400px;
+    margin: 20px;
+    height: 500px;
     width: 800px;
     position: relative;
     overflow: hidden;
@@ -287,7 +304,7 @@ main {
 }
 
 .main-project {
-    height: 500px;
+    height: 700px;
     width: 100%;
     position: relative;
     display: flex;
@@ -300,7 +317,7 @@ main {
 }
 
 .project-img-holder {
-    background-color: black;
+    background-color: var(--light2);
 }
 
 .project-img {
@@ -308,8 +325,9 @@ main {
     width: 100%;
     object-fit: cover;
     opacity: .6;
-    filter: blur(0);
 }
+
+/* ---------- Contact Me / Call to Action Section---------- */
 
 .contact-wrapper {
     display: flex;
