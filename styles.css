@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid .1px; */
+    border: solid .1px;
 }
 
 html {
@@ -32,6 +32,8 @@ body {
     max-width: 2500px;
     margin: 0 auto;
     border: solid 2px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -40,6 +42,7 @@ h1, h2, h3 {
 
 p, li, a {
     font-family: 'Archivo Narrow', sans-serif;
+    text-decoration: none;
 }
 
 li a {
@@ -203,6 +206,11 @@ main {
     padding: 10px 20px;
 }
 
+.bio-text a {
+    font-weight: bold;
+    color: var(--light2);
+}
+
 .bio-img-container {
     width: 40%;
     display: flex;
@@ -341,40 +349,93 @@ main {
 }
 
 /* ---------- Contact Me / Call to Action Section---------- */
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.contact-me-title {
+    text-align: center;
+    width: 100%;
+    background-color: var(--dark2);
+    font-size: 36px;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px var(--dark1);
+}
 
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     height: auto;
+    flex-wrap: wrap;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 25%; */
+    height: auto;
 }
 
 .contact-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
     align-items: center;
-    height: 200px;
-    width: 50%;
     margin: 0 auto;
+    width: 100%;
 }
 
-.contact-img {
-    height: 400px;
+.contact-text-link {
+    display: none;
+}
+
+.contact-section-img {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 100px;
 }
 
 .contact-icon-img {
-    height: 150px;
-    width: 150px;
-
+    height: 100px;
+    width: 100px;
 }
 
+/* ---------- Footer Section ---------- */
 footer {
-    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark1);
+    color: var(--light1);
+    font-size: 24px;
+}
+
+.footer-text {
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    color: var(--light1);
 }
 
 /* ----- Pseudo Elements ----- */
 
 .nav-links:visited {
     color: var(--dark1);
+}
+
+.footer-link:visited {
+    color: var(--light1);
 }
 
 /* Blur background images and show links on hover */
@@ -417,6 +478,31 @@ footer {
 
 /*  768px */
 @media screen and (max-width: 768px) {
-    
+
+    .bio-content-wrapper {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .bio-mini-card {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .section-header {
+        font-size: 2rem;
+    }
+
+    .contact-group {
+        width: 100%;
+    }
+
+    .contact-icon-img {
+        display: none;
+    }
+
+    .contact-text-link {
+        display: block;
+    }
     
 }
