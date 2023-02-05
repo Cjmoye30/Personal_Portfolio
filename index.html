@@ -39,7 +39,7 @@
          -->
 
 
-    <header>
+    <header id="header">
         <!-- Div for logo and name of the page - Centered on the screen -->
         <div class="header-content">
             <img class="logo" src="assets/images/signature-logo-light.svg" alt="placeholder-logo">
@@ -76,10 +76,6 @@
                 <div class="about-me">
                     <div class="bio-left">
                         <h1 class="bio-title">Hi, I'm Cambric.</h1>
-
-                        <!-- Add in text that says "A few of my many hats and interests:" -->
-                        <!-- I can add background faded images which match up to these categories -->
-
                         <div class="bio-content-wrapper">
 
                             <div class="bio-mini-card bio-mini-card-inner">
@@ -112,7 +108,9 @@
                         </p>
                         <hr>
                         <p class="bio-text">I'm currently focused on learning as much as possible, connecting with my
-                            cohort and developer community, and ultimately <span>to create code and applications that people will
+                            cohort and developer community, and I ultimately desire <span>to create code and
+                                applications that
+                                people will
                                 love</span>.</p>
                     </div>
                 </div>
@@ -140,7 +138,8 @@
                     <h3 class="project-title">In Progress: Favorite Recepie Collection</h3>
 
                     <div class="project-links-wrapper">
-                        <h3 class="project-links project-links-top"><a href="https://github.com/Cjmoye30/Cookbook/pull/1" target="_blank">Github Repo</a></h3>
+                        <h3 class="project-links project-links-top"><a
+                                href="https://github.com/Cjmoye30/Cookbook/pull/1" target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site - Coming Soon!</a></h3>
                     </div>
 
@@ -181,8 +180,9 @@
                     <h3 class="project-title">Coding Bootcamp Study Guide</h3>
 
                     <div class="project-links-wrapper">
-                        <h3 class="project-links project-links-top"><a href="https://github.com/Cjmoye30/prework-study-guide"
-                                target="_blank">Github Repo</a></h3>
+                        <h3 class="project-links project-links-top"><a
+                                href="https://github.com/Cjmoye30/prework-study-guide" target="_blank">Github Repo</a>
+                        </h3>
                         <h3 class="project-links"><a href="https://cjmoye30.github.io/prework-study-guide/"
                                 target="_blank">Github Live Site</a></h3>
                     </div>
@@ -288,31 +288,44 @@
             <div class="contact-wrapper">
 
                 <!-- Title and Headshot SVG -->
-                <h3>Like what you see? Let's Connect!</h3>
-                <img class="contact-img" src="assets/images/SVGHeadshot.svg" alt="Black and White Headshot">
+                <h3 class="contact-me-title">Like what you see? Let's Connect!</h3>
+                <img class="contact-section-img" src="assets/images/SVGHeadshot.svg" alt="Black and White Headshot">
 
                 <!-- Links for all Social Media and ways to connect - more will be added with time -->
                 <div class="contact-links">
 
-                    <a target="_blank" href="https://github.com/Cjmoye30">
-                        <img class="contact-icon-img" src="assets/icons/github-icon.svg" alt="github logo"></a>
+                    <div class="contact-group contact-group-inner">
+                        <a target="_blank" href="https://github.com/Cjmoye30">
+                            <img class="contact-icon-img" src="assets/icons/github-icon.svg" alt="github icon"></a>
+                            <a class="contact-text-link" href="https://github.com/Cjmoye30">Github.com/Cjmoye30</a>
+                    </div>
 
-                    <a target="_blank" href="https://www.linkedin.com/in/cambric-moye-30/">
-                        <img class="contact-icon-img" src="assets/icons/linkedin-icon.svg" alt="github logo"></a>
+                    <div class="contact-group contact-group-inner">
+                        <a target="_blank" href="https://www.linkedin.com/in/cambric-moye-30/">
+                            <img class="contact-icon-img" src="assets/icons/linkedin-icon.svg" alt="linkedin icon"></a>
+                            <a class="contact-text-link" href="https://www.linkedin.com/in/cambric-moye-30">https://www.linkedin.com/in/cambric-moye-30/</a>
+                    </div>
 
-                    <a target="_blank" href="mailto:Cjmoye30@gmail.com">
-                        <img class="contact-icon-img" src="assets/icons/gmail-icon.svg" alt="github logo"></a>
+                    <div class="contact-group contact-group-inner">
+                        <a target="_blank" href="mailto:Cjmoye30@gmail.com">
+                            <img class="contact-icon-img" src="assets/icons/gmail-icon.svg" alt="gamil icon"></a>
+                            <a href=""></a>
+                        <a class="contact-text-link" href="mailto:Cjmoye30@gmail.com">Cjmoye30@gmail.com</a>
+                    </div>
+
+                    <div class="div contact-group">
+                        <img src="assets/icons/phone-icon.svg" class="contact-icon-img" alt="mobile phone icon">
+                        <p>919-920-9701</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <h2>Top</h2>
+        <p class="footer-text">Made with ❤️ in Charlotte, NC</p>
+        <a class="footer-link" href="#header">Back to Top</a>
     </footer>
-
-
-
     <script src="" async defer></script>
 </body>
 
