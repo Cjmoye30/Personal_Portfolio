@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid .1px;
+    /* border: solid .1px; */
 }
 
 html {
@@ -353,8 +353,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* height: 100%;
-    width: 100%; */
 }
 
 .contact-me-title {
@@ -379,8 +377,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width: 25%; */
     height: auto;
+    width: 25%;
+}
+
+.contact-group-inner {
+    border-right: 1px solid;
 }
 
 .contact-links {
@@ -390,10 +392,25 @@ main {
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    padding: 20px 0px;
     width: 100%;
 }
 
 .contact-text-link {
+    display: none;
+}
+
+.contact-text-link, .phone-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.phone-icon-group {
+    position: relative;
+}
+
+.phone-text {
+    position: absolute;
     display: none;
 }
 
@@ -428,7 +445,7 @@ footer {
     color: var(--light1);
 }
 
-/* ----- Pseudo Elements ----- */
+/* ---------- Pseudo Elements ---------- */
 
 .nav-links:visited {
     color: var(--dark1);
@@ -436,6 +453,21 @@ footer {
 
 .footer-link:visited {
     color: var(--light1);
+}
+
+/*  Contact Icons on Hover */
+.contact-group-inner:hover {
+    opacity: .5;
+}
+
+/* Effects for Phone Icon Only */
+.phone-icon-group:hover .contact-icon-img {
+    opacity: .2;
+}
+
+.phone-icon-group:hover .phone-text {
+    display: block;
+    opacity: 1;
 }
 
 /* Blur background images and show links on hover */
@@ -489,12 +521,22 @@ footer {
         height: auto;
         padding: 5px;
     }
+
+    .bio-mini-card-inner {
+        border: none;
+        border-bottom: .1px solid;
+    }
     .section-header {
         font-size: 2rem;
     }
 
+    .contact-links {
+        padding: 15px 0;
+    }
+
     .contact-group {
-        width: 100%;
+        width: 75%;
+        padding: 15px 0;
     }
 
     .contact-icon-img {
@@ -502,6 +544,15 @@ footer {
     }
 
     .contact-text-link {
+        display: block;
+    }
+
+    .contact-group-inner {
+        border-right: none;
+        border-bottom: .1px solid;
+    }
+
+    .phone-text {
         display: block;
     }
     
