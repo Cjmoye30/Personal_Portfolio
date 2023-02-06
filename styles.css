@@ -435,6 +435,7 @@ footer {
     background-color: var(--dark1);
     color: var(--light1);
     font-size: 24px;
+    padding: 50px;
 }
 
 .footer-text {
