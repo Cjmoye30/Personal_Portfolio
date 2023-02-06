@@ -18,27 +18,7 @@
 </head>
 
 <body>
-
-    <!-- 
-            HTML To-Do List:
-            1. Header Section with a headshot, name, and a contact link which deploys to a new page or email with details on how to contact me
-            2. Header links can be SVG images for git, linkedin, and a icon to contact me.
-            3. Body section will have clear section semantic elements using flexbox containers
-            4. Each container will have a screenshot of a project I'm working on at the moment
-            5. Add in at least 4-5 different projects
-                -your blog, your future big project for graduation, some frontend-mentor material, your study guide, JS calculators and functions, etc.
-            6. Footer section to take you back to the top.
-
-            Left to do:
-            - Publish the site
-            - Create new repo for the Cookbook
-            - Additional styling on the contact me section
-            - style footer
-            - do at least 1 frontend mentor project and record
-            media query for smallest screen size and reduce the font on everything
-         -->
-
-
+    <!--Header Section - Logo and Navigation Bar -->
     <header id="header">
         <!-- Div for logo and name of the page - Centered on the screen -->
         <div class="header-content">
@@ -49,6 +29,7 @@
             </a>
         </div>
 
+        <!-- Navigation bar to all sections on the webpage -->
         <div class="nav">
             <ul class="nav-group">
                 <li>
@@ -63,16 +44,15 @@
                 </li>
             </ul>
         </div>
-
     </header>
 
-    <!-- Main section which will contain all projects and contact info in different sections within -->
+    <!-- Main Section -->
     <main>
 
-        <!-- Introductory Section with breif bio of who I am -->
-        <div id="about-me">
+        <!-- Introductory Bio with Headshot -->
+        <section id="about-me" class="section section1">
             <div class="bio">
-                <div class="about-me">
+                <div class="bio-content">
                     <div class="bio-left">
                         <h1 class="bio-title">Hi, I'm Cambric.</h1>
                         <div class="bio-content-wrapper">
@@ -95,7 +75,6 @@
                             </div>
 
                         </div>
-
                     </div>
 
                     <!-- Text about who I am and my intentions -->
@@ -119,7 +98,7 @@
                     <img class="bio-img" src="assets/images/Main Headshot.PNG" alt="Cambric Moye Headshot">
                 </div>
             </div>
-        </div>
+        </section>
 
         <section id="my-work" class="section section1">
             <h2 class="section-header">My Work</h2>
@@ -137,8 +116,8 @@
                     <h3 class="project-title">In Progress: Favorite Recepie Collection</h3>
 
                     <div class="project-links-wrapper">
-                        <h3 class="project-links project-links-top"><a
-                                href="https://github.com/Cjmoye30/Cookbook/pull/1" target="_blank">Github Repo</a></h3>
+                        <h3 class="project-links project-links-top"><a href="https://github.com/Cjmoye30/Cookbook"
+                                target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site - Coming Soon!</a></h3>
                     </div>
 
@@ -224,12 +203,16 @@
                     <h3 class="project-title">Portfolio</h3>
 
                     <div class="project-links-wrapper">
-                        <h3 class="project-links project-links-top"><a href="https://github.com/Cjmoye30/Personal_Portfolio" target="_blank">Github Repo</a></h3>
-                        <h3 class="project-links"><a href="https://cjmoye30.github.io/Personal_Portfolio/" target="_blank">Github Live Site</a></h3>
+                        <h3 class="project-links project-links-top"><a
+                                href="https://github.com/Cjmoye30/Personal_Portfolio" target="_blank">Github Repo</a>
+                        </h3>
+                        <h3 class="project-links"><a href="https://cjmoye30.github.io/Personal_Portfolio/"
+                                target="_blank">Github Live Site</a></h3>
                     </div>
 
                     <div class="project-description">
-                        <p>My personal portfolio will be an ongoing project which I will continue to add to over time. This will showcase some of my best work and will stay up to date.</p>
+                        <p>My personal portfolio will be an ongoing project which I will continue to add to over time.
+                            This will showcase some of my best work and will stay up to date.</p>
                     </div>
 
                 </div>
@@ -243,6 +226,7 @@
 
                     <h3 class="project-title">Project 5 - TBD</h3>
 
+                    <!-- Placeholder for links -->
                     <!-- <div class="project-links-wrapper">
                         <h3 class="project-links project-links-top"><a href="#" target="_blank">Github Repo</a></h3>
                         <h3 class="project-links"><a href=" #" target="_blank">Github Live Site</a></h3>
@@ -255,7 +239,7 @@
 
                 </div>
 
-                <!-- Project 6 -->
+                <!-- Project 6 Placeholder-->
                 <!-- <div class="project-card">
                     <div class="project-img-holder">
                         <img class="project-img" src="assets/images/Under Construction.jpg"
@@ -276,11 +260,10 @@
 
                 </div> -->
 
-
             </div>
         </section>
 
-        <!-- Contact Me Section - Call to action for next steps with links to all socials -->
+        <!-- Contact Me Section -->
         <section id="contact-me" class="section section2">
             <h2 class="section-header">Contact Me</h2>
             <div class="contact-wrapper">
@@ -295,25 +278,25 @@
                     <div class="contact-group contact-group-inner">
                         <a target="_blank" href="https://github.com/Cjmoye30">
                             <img class="contact-icon-img" src="assets/icons/github-icon.svg" alt="github icon"></a>
-                            <a class="contact-text-link" href="https://github.com/Cjmoye30">Github</a>
+                        <a class="contact-text-link" href="https://github.com/Cjmoye30">Github</a>
                     </div>
 
                     <div class="contact-group contact-group-inner">
                         <a target="_blank" href="https://www.linkedin.com/in/cambric-moye-30/">
                             <img class="contact-icon-img" src="assets/icons/linkedin-icon.svg" alt="linkedin icon"></a>
-                            <a class="contact-text-link" href="https://www.linkedin.com/in/cambric-moye-30">LinkedIn/</a>
+                        <a class="contact-text-link" href="https://www.linkedin.com/in/cambric-moye-30">LinkedIn/</a>
                     </div>
 
                     <div class="contact-group contact-group-inner">
                         <a target="_blank" href="mailto:Cjmoye30@gmail.com">
                             <img class="contact-icon-img" src="assets/icons/gmail-icon.svg" alt="gamil icon"></a>
-                            <a href=""></a>
+                        <a href=""></a>
                         <a class="contact-text-link" href="mailto:Cjmoye30@gmail.com">Gmail</a>
                     </div>
 
                     <div class="contact-group phone-icon-group">
                         <img src="assets/icons/phone-icon.svg" class="contact-icon-img" alt="mobile phone icon">
-                        <p class="phone-text">919-920-9701</p>
+                        <p class="phone-text contact-text-link">919-920-9701</p>
                     </div>
                 </div>
             </div>
