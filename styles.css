@@ -1,9 +1,5 @@
 /* ---------- Color Pallets ---------- */
 :root{
-
-    /* Paste out all color pallet links to access them easily. */
-
-    /* https://colorhunt.co/palette/362706464e2eacb992e9e5d6 */
     --dark1:#362706;
     --dark2: #ACB992;
     --light1: #E9E5D6;
@@ -14,20 +10,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid .1px; */
 }
 
 html {
-    /* Bakcground Creator: 
-    <a href="https://www.freepik.com/free-photo/beige-paintbrush-stroke-textured-background_17839870.htm#query=texture%20background&position=12&from_view=keyword">Image by rawpixel.com</a> on Freepik
-     */
     background-image: url(assets/images/beige-paintbrush-stroke-textured-background.jpg);
     background-position: center;
     background-size: cover;
 }
 
 body {
-    /* Limiting width because anything over 2500 seems insance and elements on the page are too far apart */
     background-color: var(--light1);
     max-width: 2500px;
     margin: 0 auto;
@@ -48,6 +39,10 @@ p, li, a {
 li a {
     text-decoration: none;
     list-style: none;
+}
+
+a {
+    color: var(--dark1);
 }
 
 /* ---------- Header, Logo, and Navigation Bar ---------- */
@@ -556,5 +551,4 @@ footer {
     .phone-text {
         display: block;
     }
-    
 }
