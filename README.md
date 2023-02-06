@@ -4,7 +4,7 @@
 
 - What was your motivation?
     - My motivation for this project was to create a profolio to showcase my best work as I progress through the UNCC Coding Bootcamp. This webpage will continually develop and improve as I learn new techniques and applications.
-    - I was to start a career in this industry as soon as possible, and I want my portfolio to stand out from the rest.
+    - I want to start a career in this industry as soon as possible, and I want my portfolio to stand out from the rest.
 
 - Why did you build this project?
     - I built this project so that I can be ready for the job hunt once the coding bootcamp is close to being finished. I believe I have put myself in a very good starting point, and it will only get better with more time and experience. 
@@ -14,9 +14,10 @@
 
 - What did you learn?
     - Correct git flow - commits, pushes, and working on the correct branches
+    - HTML & CSS Basic and Advanced syntax
     - Flexbox
     - Creating SVG images
-    - Background image behavior
+    - Background image behavior - positioning and object-fit
     - Creating a color pallet with the :root selector in CSS
     - Pseudo elements to target the child of the parent elements
     - Screen size responsiveness
