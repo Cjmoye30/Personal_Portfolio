@@ -99,6 +99,8 @@ header, footer {
     /* width: 50%; */
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 .nav-group li {
@@ -113,13 +115,14 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     /* background-color: var(--dark2); */
 }
 
 /* ---------- About Me / Bio Section ---------- */
 #about-me {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -258,56 +261,15 @@ span {
     overflow: hidden;
 }
 
-.project-title,
-.project-description {
-    position: absolute;
-    left: 0;
-    background-color: var(--light1);
-    width: 100%;
-    opacity: .9;
-    line-height: 1.5rem;
-    padding: 10px;
-}
 
-.project-title {
-    top: 0;
-    font-size: 1.8rem;
-}
+/*  */
 
-.project-description {
-    bottom: 0;
-    font-size: 1.2rem;
-}
 
-.project-links-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    background-color: var(--light1);
-    border: 1px solid var(--dark1);
-    border-radius: 15px;
-}
-
-.project-links {
-    text-align: center;
-    display: none;
-    color: var(--dark1);
-    padding: 5px 20px;
-    width: 100%;
-    opacity: .7;
-}
-
-.project-links-top {
-    border-bottom: .25px solid;
-}
-
-.project-links-wrapper {
+/* .project-links-wrapper {
     text-decoration: none;
     color: var(--dark1);
     font-size: 1.5rem;
-}
+} */
 
 .main-project {
     height: 750px;
@@ -325,6 +287,7 @@ span {
 .project-img-holder {
     height: 100%;
     width: 100%;
+    /* background-color: var(--light2); */
 }
 
 .project-img {
@@ -332,7 +295,6 @@ span {
     width: 100%;
     object-fit: contain;
     object-position: center;
-    opacity: .6;
 }
 
 /* ---------- Contact Me / Call to Action Section---------- */
@@ -446,14 +408,14 @@ footer {
 }
 
 /* Blur background images and show links on hover */
-.project-img-holder:hover {
+/* .project-img-holder:hover {
     filter: blur(4px);
     transition: all 0.25s ease-out;
 }
 
 .project-card:hover .project-links {
     display: block;
-}
+} */
 
 /* ----- Media Queries ----- */
 
@@ -483,6 +445,10 @@ footer {
 
     #about-me {
         padding: 0;
+    }
+
+    .nav-group {
+
     }
 
     .logo-subtitle {
@@ -537,5 +503,9 @@ footer {
 
     .phone-text {
         position: relative;
+    }
+
+    footer {
+        text-align: center;
     }
 }
