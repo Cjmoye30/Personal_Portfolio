@@ -33,31 +33,20 @@
     <header id="header">
         <!-- Div for logo and name of the page - Centered on the screen -->
         <div class="header-content">
-            <img class="logo" src="assets/images/signature-logo-light.svg" alt="placeholder-logo">
-            <h1 class="logo-subtitle">Portfolio</h1>
+            <div class="logo-info">
+                <img class="logo" src="assets/images/signature-logo-light.svg" alt="placeholder-logo">
+                <h1 class="logo-subtitle">Portfolio</h1>
+            </div>
+
+            <!-- move all of your navigation links here -->
+            <div class="nav-section">
+                <a class="nav-links" href="#projects-section">My Work</a>
+                <a class="nav-links" href="#about-me">About Me</a>
+                <a class="nav-links" class="nav-links" href="assets/pdf/CambricMoye WebDev Resume.pdf" target="_blank">Resume</a>
+                <a class="nav-links" href="#contact-me">Contact</a>
+            </div>
         </div>
 
-        <!-- Navigation bar to all sections on the webpage -->
-        <div class="nav">
-            <ul class="nav-group">
-                <li>
-                    <a class="nav-links" href="index.html">About Me</a>
-                </li>
-
-                <li>
-                    <a class="nav-links" href="projectPage.html">My Work</a>
-                </li>
-
-                <!-- Resume -->
-                <li>
-                    <a class="nav-links" href="assets/pdf/CambricMoye WebDev Resume.pdf" target="_blank">Resume</a>
-                </li>
-
-                <li>
-                    <a class="nav-links" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
     </header>
 
     <!-- Main Section -->
@@ -106,7 +95,7 @@
                                 applications that people will
                                 love</span>.</p>
 
-                        <button class="btn btn-primary">More About Me <i class="fa-solid fa-arrow-down"></i> </button>
+                        <a class="bio-text" href="#about_me_section">More About Me <i class="fa-solid fa-arrow-down"></i></a>
 
 
                     </div>
@@ -119,77 +108,115 @@
             </div>
         </section>
 
-        <hr>
 
         <!-- Projects Section -->
-        <section id="projects-section">
+        <div class="section-header">
             <h1>My Works</h1>
             <h6>Some of my Most Recent Projects:</h6>
+        </div>
+        <section id="projects-section">
 
+            <!-- MAIN Project -->
             <div class="row row-first project-row p-4">
-                <div class="newProjectCard col col-lg-12">
+                <div class="newProjectCard col-lg-8 col-sm-12">
                     <img class="project-image-new" src="/assets/images/dreamGPThome.png" alt="">
                     <div class="project-overlay">
-                        <p class="project-overlay-text">Project Title</p>
-                        <p class="project-overlay-text">Project Description</p>
-                        <p class="project-overlay-text">Languages Used</p>
+                        <p class="project-overlay-text">DreamerGPT</p>
+                        <p class="project-overlay-text">Interpret and log dreams with ChatGPT Open AI</p>
+                        <p class="project-overlay-text">ExpressJS, Sequelize, JQuery, HandlebarsJS</p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/Cjmoye30/Dream_Catcher">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://protected-hamlet-16560.herokuapp.com/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
+            <hr>
+
+            <!-- Second Projects -->
             <div class="row row-second project-row p-4">
-                <div class="col-lg-6">
+                <div class="col-lg-6 outer-card">
                     <div class="newProjectCard col-12">
                         <img class="project-image-new" src="/assets/images/recipeHubHomepage.png" alt="">
                         <div class="project-overlay">
-                            <p class="project-overlay-text">Project Title</p>
-                            <p class="project-overlay-text">Project Description</p>
-                            <p class="project-overlay-text">Languages Used</p>
+                            <p class="project-overlay-text">RecipeHub</p>
+                            <p class="project-overlay-text">Find or search for recipes with your search criteria and find a local Charlotte grocery store</p>
+                            <p class="project-overlay-text">Javascript, HTML, CSS, Bulma</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Cjmoye30/Recipe_Hub">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://cjmoye30.github.io/Recipe_Hub/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 outer-card">
                     <div class="newProjectCard col-12">
                         <img class="project-image-new" src="/assets/images/techblog-dash.png" alt="">
                         <div class="project-overlay">
-                            <p class="project-overlay-text">Project Title</p>
-                            <p class="project-overlay-text">Project Description</p>
-                            <p class="project-overlay-text">Languages Used</p>
+                            <p class="project-overlay-text">TechBlog</p>
+                            <p class="project-overlay-text">Login or Signup to create, comment, and view all our tech related blogposts</p>
+                            <p class="project-overlay-text">HandlebarsJS, ExpressJS, Sequelize, JQuery</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Cjmoye30/TechBlog">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://peaceful-oasis-37638.herokuapp.com/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <hr>
+
+            <!-- Third Projects -->
             <div class="row row-third project-row">
-                <div class="col-md-4">
+                <div class="col-md-4 outer-card">
                     <div class="newProjectCard col-12">
                         <img class="project-image-new" src="/assets/images/simonGame1.png" alt="">
                         <div class="project-overlay">
-                            <p class="project-overlay-text">Project Title</p>
-                            <p class="project-overlay-text">Project Description</p>
-                            <p class="project-overlay-text">Languages Used</p>
+                            <p class="project-overlay-text">Simon Game!</p>
+                            <p class="project-overlay-text">Classic game of Simon where users attemp to repeat a randomly generated computer sequence. </p>
+                            <p class="project-overlay-text">Javascript, HTML, CSS, Bootstrap</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Cjmoye30/TechBlog">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://peaceful-oasis-37638.herokuapp.com/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 outer-card">
                     <div class="newProjectCard col-12">
                         <img class="project-image-new" src="/assets/images/codingQuiz.png" alt="">
                         <div class="project-overlay">
-                            <p class="project-overlay-text">Project Title</p>
-                            <p class="project-overlay-text">Project Description</p>
-                            <p class="project-overlay-text">Languages Used</p>
+                            <p class="project-overlay-text">Coding Quiz</p>
+                            <p class="project-overlay-text">Series of 10 coding related questions answered against a time limit</p>
+                            <p class="project-overlay-text">Javascript, HTML, CSS</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Cjmoye30/Coding_Quiz">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://cjmoye30.github.io/Coding_Quiz/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 outer-card">
                     <div class="newProjectCard col-12">
                         <img class="project-image-new" src="/assets/images/portfolio.png" alt="">
                         <div class="project-overlay">
-                            <p class="project-overlay-text">Project Title</p>
-                            <p class="project-overlay-text">Project Description</p>
-                            <p class="project-overlay-text">Languages Used</p>
+                            <p class="project-overlay-text">CM Portfolio</p>
+                            <p class="project-overlay-text">Personal portfolio to showcase my latest work</p>
+                            <p class="project-overlay-text">Javascript, HTML, CSS</p>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Cjmoye30/Personal_Portfolio">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://cjmoye30.github.io/Personal_Portfolio/">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,8 +226,19 @@
         <hr>
 
         <!-- About Me Section -->
-        <section id="about_me-section">
-            <h1>About Me Section</h1>
+        <section id="about_me_section">
+            <div class="row -about-me-row">
+                <div class="col-lg-2 about-me-img-col">
+                </div>
+                <div class="col-lg-6">
+                    <h1>About Me</h1>
+                    <h6>Forever Student | yadda | yadda | yadda</h6>
+                    <p>Hobbies & Interests?</p>
+                    <p>What is my story</p>
+                    <p>Why am I changing careers</p>
+                    <p>Why did I choose to become a Full-Stack Web Developer?</p>
+                </div>
+            </div>
         </section>
 
         <hr>
