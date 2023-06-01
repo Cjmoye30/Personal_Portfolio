@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: .1px solid; */
+    border: .1px solid;
 }
 
 html {
@@ -54,7 +54,8 @@ a {
 }
 
 /* ---------- Header, Logo, and Navigation Bar ---------- */
-header, footer {
+header,
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,16 +68,20 @@ header, footer {
 
 .header-content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: start;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     padding-bottom: 15px;
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
 }
 
 .icon-img {
-    height: 50px;
+    height: 30px;
     width: 50px;
     position: absolute;
     top: 10px;
@@ -84,7 +89,7 @@ header, footer {
 }
 
 .logo-subtitle {
-    font-size: 48px;
+    font-size: 30px;
 }
 
 .nav {
@@ -380,6 +385,64 @@ span {
     width: 75px;
 }
 
+/* projects section - NEW */
+.project-row {
+    margin: 0 auto;
+}
+
+.newProjectCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-row {
+    width: 80%;
+}
+
+.newProjectCard {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--dark2);
+}
+
+.project-image-new {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-overlay {
+    display: flex;
+
+}
+
+.project-overlay {
+    display: none;
+}
+
+.newProjectCard:hover .project-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    opacity: .8;
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: .8; }
+  }
+
 /* ---------- Footer Section ---------- */
 footer {
     font-size: 1.5rem;
@@ -463,7 +526,7 @@ footer {
         flex-direction: row;
     }
 
-    .nav-links{
+    .nav-links {
         font-size: 1.2rem;
         padding: 5px 10px;
     }
