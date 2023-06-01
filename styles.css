@@ -415,9 +415,8 @@ span {
     border-radius: 10px;
 }
 
-.project-overlay {
-    display: flex;
-
+.project-overlay-text {
+    margin-bottom: 0;
 }
 
 .project-overlay {
@@ -436,6 +435,7 @@ span {
     height: auto;
     opacity: .8;
     animation: fadeIn .5s;
+    padding: 20px;
 }
 
 @keyframes fadeIn {
