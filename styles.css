@@ -257,13 +257,18 @@ span {
     background-color: var(--dark1)
 }
 
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-me-button {
-    padding: 10px;
+    padding: 10px 30px;
     background-color: var(--light3);
     color: var(--dark1);
     border: 1px solid var(--dark1);
     box-shadow: 1px 1px 4px black;
-
 }
 .about-me-button:hover {
     background-color: whitesmoke
@@ -412,6 +417,11 @@ span {
     padding: 30px 10px;
 }
 
+.row-third {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .newProjectCard {
     display: flex;
     align-items: center;
@@ -536,6 +546,18 @@ span {
     border-bottom: 1px solid var(--dark1);
 }
 
+.about-me-header-2 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--dark1);
+    padding: 20px;
+}
+
+.header-pillar {
+    color: var(--dark2);
+    font-weight: bold;
+}
+
 .about-me-row {
     display: flex;
     align-items: center;
@@ -558,12 +580,6 @@ span {
     background-size: contain;
     background-size: 100%;
     background-repeat: none;
-}
-
-.about-me-header {
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid var(--dark1);
 }
 
 .about-me-text {
@@ -633,16 +649,6 @@ footer {
     opacity: 1;
 }
 
-/* Blur background images and show links on hover */
-/* .project-img-holder:hover {
-    filter: blur(4px);
-    transition: all 0.25s ease-out;
-}
-
-.project-card:hover .project-links {
-    display: block;
-} */
-
 /* ----- Media Queries ----- */
 
 @media screen and (max-width: 1250px) {
@@ -668,6 +674,30 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    .about-me-header-2 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo-info {
+        text-align: center;
+    }
+
+    .header-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .bio-img {
+        width: 100%;
+        height: auto;
+    }
 
     #intro {
         padding: 0;
@@ -724,6 +754,7 @@ footer {
 
     .contact-text-link {
         display: block;
+        color: var(--dark1);
     }
 
     .contact-group-inner {
