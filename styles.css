@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: var(--light1);
+    background-color: var(--light3);
     max-width: 2500px;
     margin: 0 auto;
     border: solid 2px;
@@ -121,18 +121,33 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-color: var(--dark2); */
 }
 
 .section-header {
     background-color: var(--dark2);
+    border-bottom: 1px solid var(--light3);
     color: var(--light2);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
+figure {
+    padding: 50px;
+    text-align: center;
+    color: var(--light2);
+}
+
+.blockquote {
+    font-size: 2rem;
+}
+
+.blockquote-footer {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
 /* ---------- About Me / Bio Section ---------- */
-#about-me {
+#intro {
     width: 100%;
     background-color: var(--light2);
     display: flex;
@@ -240,6 +255,18 @@ span {
     border-radius: 25px;
     margin: 10px;
     background-color: var(--dark1)
+}
+
+.about-me-button {
+    padding: 10px;
+    background-color: var(--light3);
+    color: var(--dark1);
+    border: 1px solid var(--dark1);
+    box-shadow: 1px 1px 4px black;
+
+}
+.about-me-button:hover {
+    background-color: whitesmoke
 }
 
 /* ---------- My Work / Projects Section---------- */
@@ -389,7 +416,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--light2);
+    border: 1px solid var(--dark1);
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
@@ -422,7 +449,7 @@ span {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--dark1);
+    border-top: 1px solid var(--light2);
     padding: 10px;
     margin: 10px 0;
     width: 50%;
@@ -452,7 +479,7 @@ span {
     opacity: .9;
     animation: fadeIn .5s;
     padding: 20px;
-    border-top: .1px solid var(--dark1);
+    border-top: .1px solid var(--light2);
 }
 
 @keyframes fadeIn {
@@ -467,7 +494,7 @@ span {
 
 #skills {
     border-bottom: 1px solid var(--dark1);
-    background-color: whitesmoke;
+    background-color: var(--light2)
 }
 
 .skills-section-header {
@@ -485,18 +512,16 @@ span {
     justify-content: center;
     align-items: center;
     color: var(--dark1);
-    background-color: whitesmoke;
+    background-color: var(--light2);
     padding: 50px 20px;
 }
 
 .skill-card {
-    border: 1px solid var(--dark2);
-    background-color: var(--light2);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    min-width: 200px;
+    height: 100px;
+    min-width: 150px;
 }
 
 #about-me-section {
@@ -516,6 +541,7 @@ span {
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 20px;
 }
 
 .about-me-col {
@@ -534,9 +560,40 @@ span {
     background-repeat: none;
 }
 
+.about-me-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--dark1);
+}
+
 .about-me-text {
     font-size: 1.3rem;
-    line-height: 3rem;
+    padding: 20px;
+    /* line-height: 3rem; */
+}
+
+.about-me-highlights {
+    background-color: var(--dark1);
+    color: whitesmoke;
+    padding: 20px 10px;
+    border: 1px solid var(--dark1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+}
+
+.trans-skills-title {
+    text-align: center;
+}
+
+.transfer-skills-header {
+    color: var(--light3);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.transfer-skills {
+    color: var(--light2);
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .contact-row {
@@ -612,7 +669,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    #about-me {
+    #intro {
         padding: 0;
     }
 
