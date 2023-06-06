@@ -2,6 +2,7 @@
 :root {
     --dark1: #2C3639;
     --dark2: #3F4E4F;
+    --dark3: hsl(184, 10%, 35%);
     --light1: #5ca279;
     --light2: #DCD7C9;
     --light3: #8fbea2;
@@ -123,6 +124,13 @@ main {
     /* background-color: var(--dark2); */
 }
 
+.section-header {
+    background-color: var(--dark2);
+    color: var(--light2);
+    padding: 20px;
+    text-align: center;
+}
+
 /* ---------- About Me / Bio Section ---------- */
 #about-me {
     width: 100%;
@@ -160,7 +168,6 @@ main {
 }
 
 .bio-title {
-    font-size: 3rem;
     padding: 20px 30px;
     text-align: center;
 }
@@ -361,14 +368,15 @@ span {
 
 /* projects section - NEW */
 #projects-section {
-    background-color: var(--dark2);
+    background-color: var(--light2);
+    padding: 0 0 75px 0;
 }
 
 .projects-section-header {
-    background-color: var(--dark1);
+    /* background-color: var(--dark1); */
     color: var(--light2);
     padding: 30px;
-    border-bottom: 1px solid var(--light2);
+    border-bottom: 1px solid var(--dark1);
 }
 
 .project-row {
@@ -403,6 +411,12 @@ span {
     font-size: 1.1rem;
 }
 
+.project-title, .project-desc {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--light2);
+}
+
 .project-links {
     display: flex;
     flex-direction: row;
@@ -416,7 +430,7 @@ span {
 
 
 .project-links a {
-    color: var(--dark2);
+    color: var(--light2);
     padding: 0 15px;
 }
 
@@ -430,7 +444,8 @@ span {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    background-color: var(--light2);
+    background-color: var(--dark2);
+    color: var(--light2);
     bottom: 0;
     width: 100%;
     height: auto;
@@ -452,7 +467,14 @@ span {
 
 #skills {
     border-bottom: 1px solid var(--dark1);
-    
+    background-color: whitesmoke;
+}
+
+.skills-section-header {
+    padding: 20px;
+    /* background-color: rgb(215, 214, 214); */
+    color: var(--dark1);
+    border-bottom: 1px solid var(--dark1);
 }
 
 .skills-row {
@@ -480,31 +502,41 @@ span {
 #about-me-section {
     background-color: var(--light2);
     color: var(--dark1);
-    padding: 50px 20px;
+    padding: 0 0 50px 0;
     border-bottom: 1px solid var(--light1);
+}
+
+.about-section-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--dark1);
 }
 
 .about-me-row {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .about-me-col {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--light2);
 }
 
 .about-me-img {
     height: 100%;
-    max-height: 300px;
+    max-height: 450px;
     background-color: whitesmoke;
-    opacity: .8;
+    opacity: 1;
     background-size: contain;
     background-size: 100%;
     background-repeat: none;
+}
+
+.about-me-text {
+    font-size: 1.3rem;
+    line-height: 3rem;
 }
 
 .contact-row {
