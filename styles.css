@@ -649,16 +649,6 @@ footer {
     opacity: 1;
 }
 
-/* Blur background images and show links on hover */
-/* .project-img-holder:hover {
-    filter: blur(4px);
-    transition: all 0.25s ease-out;
-}
-
-.project-card:hover .project-links {
-    display: block;
-} */
-
 /* ----- Media Queries ----- */
 
 @media screen and (max-width: 1250px) {
