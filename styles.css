@@ -72,7 +72,7 @@ footer {
 }
 
 .logo {
-    height: 100px;
+    height: 125px;
 }
 
 .icon-img {
@@ -84,7 +84,7 @@ footer {
 }
 
 .logo-subtitle {
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .nav {
@@ -155,7 +155,12 @@ figure {
     justify-content: center;
     align-items: center;
     padding: 50px 30px;
+}
 
+.intro-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio {
@@ -163,6 +168,13 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.bio-img-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-content {
@@ -234,7 +246,7 @@ span {
 }
 
 .bio-img-container {
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,21 +339,20 @@ span {
 }
 
 /* ---------- Contact Me / Call to Action Section---------- */
+
 #contact-me {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100vh;
+    background-color: var(--light3);
+    color: var(--light2);
+    padding: 20px;
 }
 
 .contact-me-title {
     text-align: center;
     width: 100%;
-    background-color: var(--dark2);
     font-size: 2rem;
     padding: 25px;
     margin-bottom: 20px;
-    border-bottom: solid 1px var(--dark1);
+    border-bottom: solid 1px var(--light2);
 }
 
 .contact-wrapper {
@@ -380,11 +391,14 @@ span {
 
 .contact-text-link,
 .phone-text {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    color: whitesmoke
 }
 
 .phone-icon-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -394,8 +408,8 @@ span {
 }
 
 .contact-icon-img {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: auto;
 }
 
 /* projects section - NEW */
@@ -554,7 +568,7 @@ span {
 }
 
 .header-pillar {
-    color: var(--dark2);
+    color: var(--dark3);
     font-weight: bold;
 }
 
@@ -585,10 +599,12 @@ span {
 .about-me-text {
     font-size: 1.3rem;
     padding: 20px;
-    /* line-height: 3rem; */
 }
 
 .about-me-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--dark1);
     color: whitesmoke;
     padding: 20px 10px;
@@ -596,6 +612,12 @@ span {
     border-radius: 10px;
     box-shadow: 3px 3px 8px black;
 }
+
+.highlights-wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
 
 .trans-skills-title {
     text-align: center;
@@ -631,47 +653,35 @@ footer {
 } */
 
 .footer-link:visited {
-    color: var(--light1);
+    color: var(--light2);
 }
 
 /*  Contact Icons on Hover */
-.contact-group-inner:hover {
-    opacity: .5;
+.contact-group-inner:hover .phone-text {
+    opacity: 1;
 }
 
 /* Effects for Phone Icon Only */
 .phone-icon-group:hover .contact-icon-img {
     opacity: .2;
+
 }
 
 .phone-icon-group:hover .phone-text {
-    display: block;
+    display: flex;
+    align-items: center;
     opacity: 1;
+    animation: fadeIn .5s;
+
 }
 
 /* ----- Media Queries ----- */
 
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
     .project-card {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 992px) {
-    .bio-content {
-        width: 100%;
-        align-items: center;
-    }
-
-    .bio-img-container {
-        width: 100%;
-    }
-
-    .bio-img {
-        width: 100%;
-        height: 400px;
-    }
-}
+} */
 
 @media screen and (max-width: 768px) {
 
@@ -694,10 +704,6 @@ footer {
         align-items: center;
     }
 
-    .bio-img {
-        width: 100%;
-        height: auto;
-    }
 
     #intro {
         padding: 0;
@@ -720,6 +726,15 @@ footer {
         padding: 5px 10px;
     }
 
+    .bio-img {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .about-me-button {
+        margin: 20px;
+    }
 
     .bio-content-wrapper {
         flex-direction: column;
@@ -764,6 +779,30 @@ footer {
 
     .phone-text {
         position: relative;
+    }
+
+    .project-row {
+        width: 100%;
+        padding: 0;
+    }
+
+    #projects-section {
+        padding: 10px 0;
+    }
+
+    .row-second {
+        padding: 0;
+    }
+
+    .newProjectCard:hover .project-overlay {
+        padding: 10px;
+        font-size: .8rem;
+        height: auto;
+    }
+
+    .project-overlay-text, .project-links {
+        font-size: 1rem;
+        padding: 0;
     }
 
     footer {
