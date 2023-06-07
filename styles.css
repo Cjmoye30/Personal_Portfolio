@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: .1px solid; */
+    border: .1px solid;
 }
 
 body {
@@ -234,7 +234,7 @@ span {
 }
 
 .bio-img-container {
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,21 +327,20 @@ span {
 }
 
 /* ---------- Contact Me / Call to Action Section---------- */
+
 #contact-me {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100vh;
+    background-color: var(--light3);
+    color: var(--light2);
+    padding: 20px;
 }
 
 .contact-me-title {
     text-align: center;
     width: 100%;
-    background-color: var(--dark2);
     font-size: 2rem;
     padding: 25px;
     margin-bottom: 20px;
-    border-bottom: solid 1px var(--dark1);
+    border-bottom: solid 1px var(--light2);
 }
 
 .contact-wrapper {
@@ -380,11 +379,14 @@ span {
 
 .contact-text-link,
 .phone-text {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    color: whitesmoke
 }
 
 .phone-icon-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -394,8 +396,8 @@ span {
 }
 
 .contact-icon-img {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: auto;
 }
 
 /* projects section - NEW */
@@ -554,7 +556,7 @@ span {
 }
 
 .header-pillar {
-    color: var(--dark2);
+    color: var(--dark3);
     font-weight: bold;
 }
 
@@ -585,7 +587,6 @@ span {
 .about-me-text {
     font-size: 1.3rem;
     padding: 20px;
-    /* line-height: 3rem; */
 }
 
 .about-me-highlights {
@@ -631,22 +632,26 @@ footer {
 } */
 
 .footer-link:visited {
-    color: var(--light1);
+    color: var(--light2);
 }
 
 /*  Contact Icons on Hover */
-.contact-group-inner:hover {
-    opacity: .5;
+.contact-group-inner:hover .phone-text {
+    opacity: 1;
 }
 
 /* Effects for Phone Icon Only */
 .phone-icon-group:hover .contact-icon-img {
     opacity: .2;
+
 }
 
 .phone-icon-group:hover .phone-text {
-    display: block;
+    display: flex;
+    align-items: center;
     opacity: 1;
+    animation: fadeIn .5s;
+
 }
 
 /* ----- Media Queries ----- */
@@ -697,6 +702,10 @@ footer {
     .bio-img {
         width: 100%;
         height: auto;
+    }
+
+    .bio-left, .bio-wrapper, .bio-text, .btn-div, .bio-img-container {
+        padding: 10px ;
     }
 
     #intro {
@@ -764,6 +773,30 @@ footer {
 
     .phone-text {
         position: relative;
+    }
+
+    .project-row {
+        width: 100%;
+        padding: 0;
+    }
+
+    #projects-section {
+        padding: 10px 0;
+    }
+
+    .row-second {
+        padding: 0;
+    }
+
+    .newProjectCard:hover .project-overlay {
+        padding: 10px;
+        font-size: .8rem;
+        height: auto;
+    }
+
+    .project-overlay-text, .project-links {
+        font-size: 1rem;
+        padding: 0;
     }
 
     footer {
