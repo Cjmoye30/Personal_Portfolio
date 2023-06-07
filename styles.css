@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: .1px solid;
+    /* border: .1px solid; */
 }
 
 body {
@@ -72,7 +72,7 @@ footer {
 }
 
 .logo {
-    height: 100px;
+    height: 125px;
 }
 
 .icon-img {
@@ -84,7 +84,7 @@ footer {
 }
 
 .logo-subtitle {
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .nav {
@@ -155,7 +155,12 @@ figure {
     justify-content: center;
     align-items: center;
     padding: 50px 30px;
+}
 
+.intro-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio {
@@ -163,6 +168,13 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.bio-img-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-content {
@@ -590,6 +602,9 @@ span {
 }
 
 .about-me-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--dark1);
     color: whitesmoke;
     padding: 20px 10px;
@@ -597,6 +612,12 @@ span {
     border-radius: 10px;
     box-shadow: 3px 3px 8px black;
 }
+
+.highlights-wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
 
 .trans-skills-title {
     text-align: center;
@@ -656,27 +677,11 @@ footer {
 
 /* ----- Media Queries ----- */
 
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
     .project-card {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 992px) {
-    .bio-content {
-        width: 100%;
-        align-items: center;
-    }
-
-    .bio-img-container {
-        width: 100%;
-    }
-
-    .bio-img {
-        width: 100%;
-        height: 400px;
-    }
-}
+} */
 
 @media screen and (max-width: 768px) {
 
@@ -699,14 +704,6 @@ footer {
         align-items: center;
     }
 
-    .bio-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .bio-left, .bio-wrapper, .bio-text, .btn-div, .bio-img-container {
-        padding: 10px ;
-    }
 
     #intro {
         padding: 0;
@@ -729,6 +726,15 @@ footer {
         padding: 5px 10px;
     }
 
+    .bio-img {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .about-me-button {
+        margin: 20px;
+    }
 
     .bio-content-wrapper {
         flex-direction: column;
